@@ -1,0 +1,19 @@
+{
+  "name": "jeetSandbox",
+  "version": "0.0.1",
+  "authors": [
+    "Mynor Alexander"
+  ],
+  "description": "jeetSandbox",
+  "keywords": [
+    "jeet"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

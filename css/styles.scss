@@ -1,0 +1,55 @@
+@import 'reset.css';
+@import 'jeet/index';
+
+@include edit();
+
+html {
+  font-size: 11px;
+  text-align: center;
+  color: #666;
+}
+
+h1 {
+  margin: 0;
+  padding: 15px 0;
+  margin-bottom: 15px;
+  background: none;
+  color: #555;
+}
+
+section {
+  @include center(960px);
+  margin-bottom: 45px;
+  p {
+    padding: 15px 0;
+  }
+}
+
+
+
+.column {
+  .twelfths {
+    .one {
+      div {
+        @include col(1/12);
+        overflow: hidden;
+        padding: px 0;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .flexible {
+    div {
+      padding: 15px 0;
+      &:nth-child(1) {
+        @include col(2/7);
+      }
+      &:nth-child(2) {
+        @include col(1/2);
+      }
+      &:nth-child(3) {
+        @include col(1.5/7);
+      }
+    }
+  }
+}
